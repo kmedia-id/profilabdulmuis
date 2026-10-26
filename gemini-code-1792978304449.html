@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV & Portofolio Digital | Dr. Abdul Muis Joenaidy, M.Pd.I</title>
+    <meta name="description" content="Curriculum Vitae dan Portofolio Digital Abdul Muis Joenaidy - Pendidik Inovatif, Fasilitator Pembelajaran Mendalam & KKA, Penulis Buku, dan Pengembang Aplikasi Pendidikan.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        edu: {
+                            dark: '#0B1120',
+                            navy: '#1E1B4B',
+                            primary: '#2563EB',
+                            cyan: '#06B6D4',
+                            gold: '#F59E0B',
+                            surface: '#F8FAFC'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F1F5F9;
+            color: #0F172A;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #1e3a8a 0%, #1e1b4b 45%, #090d16 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(37, 99, 235, 0.12), 0 8px 10px -6px rgba(37, 99, 235, 0.08);
+        }
+        .timeline-dot {
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+            }
+            .hero-gradient {
+                background: #1e1b4b !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-600 selection:text-white">
+
+    <!-- Navbar Sticky -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/10 text-white no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 font-extrabold text-lg tracking-tight">
+                <span class="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white shadow-lg shadow-blue-500/30">
+                    AM
+                </span>
+                <div>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-cyan-300">ABDUL MUIS JOENAIDY</span>
+                    <span class="hidden sm:inline-block text-xs font-medium text-cyan-400 ml-2 px-2 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/20">Portofolio & CV</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-300">
+                <a href="#profil" class="hover:text-cyan-400 transition">Profil</a>
+                <a href="#pengalaman" class="hover:text-cyan-400 transition">Pengalaman & Organisasi</a>
+                <a href="#penghargaan" class="hover:text-cyan-400 transition">Penghargaan</a>
+                <a href="#inovasi" class="hover:text-cyan-400 transition">Karya Inovasi</a>
+                <a href="#publikasi" class="hover:text-cyan-400 transition">Publikasi Buku</a>
+                <a href="#pendidikan" class="hover:text-cyan-400 transition">Pendidikan</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <button onclick="window.print()" class="px-3.5 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-xs sm:text-sm font-semibold flex items-center gap-2 transition border border-white/15" title="Cetak atau Simpan PDF">
+                    <i class="fa-solid fa-print text-cyan-400"></i>
+                    <span class="hidden sm:inline">Cetak PDF</span>
+                </button>
+                <a href="https://wa.me/6281336335612?text=Assalamu'alaikum%20Pak%20Abdul%20Muis,%20saya%20melihat%20CV%20Digital%20Bapak." target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-xs sm:text-sm font-bold text-white shadow-lg shadow-blue-600/30 flex items-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Hubungi</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="profil" class="hero-gradient text-white relative overflow-hidden pt-12 pb-20 lg:py-20">
+        <!-- Decorative Background Grid & Glow -->
+        <div class="absolute inset-0 opacity-15 pointer-events-none" style="background-image: radial-gradient(#38bdf8 1px, transparent 1px); background-size: 28px 28px;"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-blue-600/30 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Kolom Foto Profil -->
+                <div class="lg:col-span-4 flex flex-col items-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1.5 bg-gradient-to-tr from-amber-400 via-cyan-400 to-blue-600 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                        <div class="relative w-64 h-72 sm:w-72 sm:h-80 rounded-3xl overflow-hidden bg-slate-900 border-2 border-white/20 shadow-2xl">
+                            <img id="profileImage" 
+                                 src="https://drive.google.com/thumbnail?id=1Tv9u6hCWYEKQMJAIKdvwCuruvKjowuda&sz=w1000" 
+                                 onerror="if(this.src.includes('thumbnail')){this.src='https://lh3.googleusercontent.com/d/1Tv9u6hCWYEKQMJAIKdvwCuruvKjowuda=w1000';}else{this.src='https://ui-avatars.com/api/?name=Abdul+Muis+Joenaidy&size=512&background=1E3A8A&color=ffffff&bold=true';}"
+                                 alt="Foto Profil Abdul Muis Joenaidy" 
+                                 class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <a href="https://drive.google.com/file/d/1Tv9u6hCWYEKQMJAIKdvwCuruvKjowuda/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="no-print absolute -bottom-3 left-1/2 -translate-x-1/2 bg-slate-900/95 hover:bg-blue-900 text-cyan-300 text-xs font-semibold px-4 py-1.5 rounded-full border border-cyan-400/40 shadow-lg flex items-center gap-2 whitespace-nowrap transition">
+                            <i class="fa-solid fa-up-right-from-square"></i> Lihat Foto Asli
+                        </a>
+                    </div>
+
+                    <!-- Motto Hidup Badge -->
+                    <div class="mt-8 glass-card px-6 py-4 rounded-2xl text-center max-w-xs w-full">
+                        <span class="text-[11px] uppercase tracking-widest text-cyan-300 font-bold block mb-1">Motto Hidup</span>
+                        <p class="text-lg font-extrabold text-amber-400 tracking-wide flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-quote-left text-xs opacity-60"></i>
+                            Belajar, Berkarya dan Berbagi
+                            <i class="fa-solid fa-quote-right text-xs opacity-60"></i>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kolom Identitas & Ringkasan -->
+                <div class="lg:col-span-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-cyan-400/30 text-cyan-300 text-xs sm:text-sm font-semibold mb-4">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+                        Pendidik Transformatif • Fasilitator Pendidikan • Penulis & Inovator EdTech
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        ABDUL MUIS JOENAIDY
+                    </h1>
+                    <p class="mt-2 text-cyan-300 font-semibold text-base sm:text-lg">
+                        Dr. Abdul Muis Joenaidy, M.Pd.I — Pendidik SMA Negeri 1 Yosowilangun & Dosen
+                    </p>
+
+                    <p class="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed max-w-3xl">
+                        Praktisi dan akademisi pendidikan yang berfokus pada <strong class="text-white">Pembelajaran Mendalam (Deep Learning)</strong>, pemanfaatan <strong class="text-white">Koding & Kecerdasan Artifisial (KKA)</strong> dalam pembelajaran, pengembangan aplikasi edukasi digital, serta penulisan literatur pendidikan nasional.
+                    </p>
+
+                    <!-- Info Biodata Interaktif (Klik Langsung Menuju Link) -->
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+                        <button onclick="showInfoModal('Tempat & Tanggal Lahir', 'Jember, 1 Januari 1986', 'fa-calendar-check', 'https://www.google.com/maps/place/Jember,+Jawa+Timur')" class="glass-card hover:bg-white/15 p-3.5 rounded-xl flex items-center gap-3.5 transition group text-left">
+                            <div class="w-10 h-10 rounded-lg bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-cyan-300 group-hover:scale-110 transition">
+                                <i class="fa-solid fa-cake-candles"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Tempat, Tanggal Lahir</div>
+                                <div class="text-sm font-bold text-white flex items-center gap-1.5">
+                                    Jember, 1 Januari 1986
+                                    <i class="fa-solid fa-location-dot text-[11px] text-cyan-400 opacity-75"></i>
+                                </div>
+                            </div>
+                        </button>
+
+                        <a href="https://www.google.com/maps/search/?api=1&query=Yosowilangun,+Lumajang,+Jawa+Timur" target="_blank" rel="noopener noreferrer" class="glass-card hover:bg-white/15 p-3.5 rounded-xl flex items-center gap-3.5 transition group">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-300 group-hover:scale-110 transition">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Alamat Domisili (Klik Peta)</div>
+                                <div class="text-sm font-bold text-white flex items-center gap-1.5">
+                                    Yosowilangun, Lumajang, Jawa Timur
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-cyan-400"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/6281336335612" target="_blank" rel="noopener noreferrer" class="glass-card hover:bg-white/15 p-3.5 rounded-xl flex items-center gap-3.5 transition group">
+                            <div class="w-10 h-10 rounded-lg bg-green-500/20 border border-green-400/30 flex items-center justify-center text-green-400 group-hover:scale-110 transition">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </div>
+                            <div class="flex-1">
+                                <div class="text-xs text-slate-400">HP / WhatsApp (Klik Chat)</div>
+                                <div class="text-sm font-bold text-white flex items-center gap-2">
+                                    081336335612
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-green-400"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="mailto:abdulmuis11@guru.sma.belajar.id" class="glass-card hover:bg-white/15 p-3.5 rounded-xl flex items-center gap-3.5 transition group">
+                            <div class="w-10 h-10 rounded-lg bg-amber-500/20 border border-amber-400/30 flex items-center justify-center text-amber-300 group-hover:scale-110 transition">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <div class="text-xs text-slate-400">Email Resmi (Klik Kirim Email)</div>
+                                <div class="text-sm font-bold text-white truncate flex items-center gap-1.5">
+                                    abdulmuis11@guru.sma.belajar.id
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Tautan Media Sosial Langsung -->
+                    <div class="mt-6">
+                        <div class="text-xs font-bold uppercase tracking-wider text-cyan-300 mb-3">Kanal Media Sosial & Edukasi Digital (Klik untuk Membuka):</div>
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-2.5">
+                            <a href="https://www.facebook.com/abdulmuisjoenaidy" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-blue-600/30 hover:bg-blue-600 border border-blue-400/30 text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
+                                <i class="fa-brands fa-facebook text-blue-300"></i>
+                                <span>FB: Abdul Muis Joenaidy</span>
+                            </a>
+                            <a href="https://www.instagram.com/abdulmuisjoenaidy/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-pink-600/30 hover:bg-pink-600 border border-pink-400/30 text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
+                                <i class="fa-brands fa-instagram text-pink-300"></i>
+                                <span>IG: Abdul Muis Joenaidy</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@omahsinaupai" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-slate-800/80 hover:bg-black border border-slate-500/40 text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
+                                <i class="fa-brands fa-tiktok text-cyan-300"></i>
+                                <span>TikTok: Omah Sinau PAI</span>
+                            </a>
+                            <a href="https://www.youtube.com/@omahsinaupai" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-red-600/30 hover:bg-red-600 border border-red-400/30 text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
+                                <i class="fa-brands fa-youtube text-red-300"></i>
+                                <span>YT: Omah Sinau PAI</span>
+                            </a>
+                            <a href="https://www.youtube.com/@klikmedialumajang" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-amber-500/25 hover:bg-amber-600 border border-amber-400/40 text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
+                                <i class="fa-brands fa-youtube text-amber-300"></i>
+                                <span>YT: Klik Media</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistik Singkat & Highlight Kiprah (Elemen Pendukung CV) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <a href="#penghargaan" class="bg-white rounded-2xl p-5 shadow-xl border-b-4 border-amber-500 card-hover flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl shrink-0">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">13+</div>
+                    <div class="text-xs sm:text-sm font-semibold text-slate-500">Penghargaan Bergengsi</div>
+                </div>
+            </a>
+            <a href="#publikasi" class="bg-white rounded-2xl p-5 shadow-xl border-b-4 border-blue-600 card-hover flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl shrink-0">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">9</div>
+                    <div class="text-xs sm:text-sm font-semibold text-slate-500">Publikasi Buku Nasional</div>
+                </div>
+            </a>
+            <a href="#inovasi" class="bg-white rounded-2xl p-5 shadow-xl border-b-4 border-cyan-500 card-hover flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl shrink-0">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">5+</div>
+                    <div class="text-xs sm:text-sm font-semibold text-slate-500">Aplikasi Karya Inovasi</div>
+                </div>
+            </a>
+            <a href="#pengalaman" class="bg-white rounded-2xl p-5 shadow-xl border-b-4 border-indigo-600 card-hover flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl shrink-0">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                    <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">16+ Thn</div>
+                    <div class="text-xs sm:text-sm font-semibold text-slate-500">Dedikasi Pendidik & Dosen</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Kompetensi Utama (Elemen Pendukung) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+        <div class="bg-gradient-to-r from-indigo-950 via-blue-900 to-slate-900 rounded-2xl p-6 text-white shadow-lg flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold">Bidang Keahlian & Fokus Inovasi</span>
+                <h2 class="text-xl font-bold mt-1">Ekosistem Pembelajaran Berbasis Teknologi & Karakter</h2>
+            </div>
+            <div class="flex flex-wrap gap-2 justify-center lg:justify-end">
+                <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-cyan-200"><i class="fa-solid fa-brain mr-1.5 text-cyan-400"></i>Pembelajaran Mendalam (Deep Learning)</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-amber-200"><i class="fa-solid fa-microchip mr-1.5 text-amber-400"></i>Koding & Kecerdasan Artifisial (KKA)</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-emerald-200"><i class="fa-solid fa-mobile-screen-button mr-1.5 text-emerald-400"></i>Media Pembelajaran Berbasis IT</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-purple-200"><i class="fa-solid fa-pen-nib mr-1.5 text-purple-400"></i>Penulisan Buku Teks & Pedagogik</span>
+                <span class="px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-semibold text-pink-200"><i class="fa-solid fa-users-gear mr-1.5 text-pink-400"></i>Kepemimpinan & Fasilitasi Guru</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Konten Utama CV -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- BAGIAN 1: PENGALAMAN PROFESIONAL & KARIR ORGANISASI -->
+        <section id="pengalaman" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Pengalaman Kerja & Fasilitator (7 Kolom) -->
+            <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-200/80">
+                <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                    <div class="flex items-center gap-3">
+                        <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg shadow-md shadow-blue-600/20">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">Pengalaman Profesional</h2>
+                            <p class="text-xs text-slate-500">Klik pada item untuk melihat detail & tautan institusi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4" id="experienceList">
+                    <!-- Di-render via JS agar interaktif penuh -->
+                </div>
+            </div>
+
+            <!-- Karir Organisasi (5 Kolom) -->
+            <div class="lg:col-span-5 bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-200/80 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-100">
+                        <div class="w-11 h-11 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-lg shadow-md shadow-indigo-600/20">
+                            <i class="fa-solid fa-sitemap"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">Karir Organisasi</h2>
+                            <p class="text-xs text-slate-500">Kepemimpinan & jejaring kemasyarakatan</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4" id="organizationList">
+                        <!-- Di-render via JS -->
+                    </div>
+                </div>
+
+                <!-- Highlight Box di Bawah Organisasi -->
+                <div class="mt-8 p-5 rounded-2xl bg-gradient-to-br from-indigo-50 to-blue-50 border border-indigo-100">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-nodes text-indigo-600 text-xl mt-1"></i>
+                        <div>
+                            <h4 class="font-bold text-slate-800 text-sm">Kolaborasi & Jejaring Pendidikan</h4>
+                            <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                                Aktif menggerakkan komunitas guru tingkat Kabupaten hingga Provinsi Jawa Timur serta berkontribusi dalam kebijakan strategis daerah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- BAGIAN 2: PENGHARGAAN & PRESTASI (INTERAKTIF + FILTER) -->
+        <section id="penghargaan" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-200/80">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 pb-5 border-b border-slate-100">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-white flex items-center justify-center text-xl shadow-lg shadow-amber-500/25">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-slate-900">Penghargaan & Rekognisi</h2>
+                        <p class="text-xs sm:text-sm text-slate-500">13 Penghargaan Tingkat Nasional, Provinsi, dan Kabupaten (2015 – 2026)</p>
+                    </div>
+                </div>
+
+                <!-- Filter Kategori & Pencarian -->
+                <div class="flex flex-wrap items-center gap-2 no-print">
+                    <button onclick="filterAwards('all')" id="btn-award-all" class="award-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white transition">Semua (13)</button>
+                    <button onclick="filterAwards('Nasional')" id="btn-award-Nasional" class="award-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Nasional</button>
+                    <button onclick="filterAwards('Provinsi')" id="btn-award-Provinsi" class="award-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Provinsi Jatim</button>
+                    <button onclick="filterAwards('Kabupaten')" id="btn-award-Kabupaten" class="award-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition">Kabupaten</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="awardsGrid">
+                <!-- Di-render via JS -->
+            </div>
+        </section>
+
+        <!-- BAGIAN 3: KARYA INOVASI APLIKASI PEMBELAJARAN -->
+        <section id="inovasi" class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl relative overflow-hidden">
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="relative z-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">EdTech & Transformasi Digital</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold mt-1 flex items-center gap-3">
+                            <i class="fa-solid fa-rocket text-amber-400"></i>
+                            Karya Inovasi Aplikasi Pendidikan
+                        </h2>
+                        <p class="text-slate-300 text-sm mt-1">Klik pada kartu inovasi untuk membaca deskripsi fungsional dan menelusuri aplikasi.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="innovationGrid">
+                    <!-- Di-render via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- BAGIAN 4: PUBLIKASI KARYA BUKU -->
+        <section id="publikasi" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-200/80">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-100">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 text-white flex items-center justify-center text-xl shadow-lg shadow-blue-500/25">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-slate-900">Publikasi Karya Buku</h2>
+                        <p class="text-xs sm:text-sm text-slate-500">Buku Teks Utama Kementerian Agama RI & Buku Pengayaan Pendidikan (2014 – 2026)</p>
+                    </div>
+                </div>
+                <a href="https://www.google.com/search?q=%22Abdul+Muis+Joenaidy%22+buku" target="_blank" rel="noopener noreferrer" class="no-print text-xs font-bold text-blue-600 hover:text-blue-800 bg-blue-50 px-4 py-2.5 rounded-xl flex items-center gap-2 self-start sm:self-auto transition">
+                    <i class="fa-brands fa-google"></i> Cari Semua Buku di Google
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="booksGrid">
+                <!-- Di-render via JS -->
+            </div>
+        </section>
+
+        <!-- BAGIAN 5: RIWAYAT PENDIDIKAN -->
+        <section id="pendidikan" class="bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-200/80">
+            <div class="flex items-center gap-3.5 mb-8 pb-4 border-b border-slate-100">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl shadow-lg shadow-emerald-600/20">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-extrabold text-slate-900">Riwayat Pendidikan Formal & Pesantren</h2>
+                    <p class="text-xs sm:text-sm text-slate-500">Perjalanan akademik dari pendidikan dasar hingga Doktoral (S3) — Klik untuk melihat profil institusi</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" id="educationGrid">
+                <!-- Di-render via JS -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <div>
+                <div class="font-extrabold text-white text-base">DR. ABDUL MUIS JOENAIDY, M.Pd.I</div>
+                <p class="text-xs text-slate-400 mt-1">Motto: "Belajar, Berkarya dan Berbagi" • Yosowilangun, Lumajang, Jawa Timur</p>
+            </div>
+            <div class="flex items-center gap-3 no-print">
+                <a href="https://www.facebook.com/abdulmuisjoenaidy" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-blue-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/abdulmuisjoenaidy/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-pink-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@omahsinaupai" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-cyan-500 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@omahsinaupai" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-red-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://wa.me/6281336335612" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg bg-white/5 hover:bg-green-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script Data & Interaktivitas -->
+    <script>
+        // 1. DATA PENGALAMAN
+        const experiences = [
+            {
+                role: "Fasilitator Koding dan Kecerdasan Artifisial (KKA) SMA",
+                org: "BBGTK Provinsi Jawa Timur",
+                period: "2026 – Sekarang",
+                badge: "Aktif",
+                desc: "Memfasilitasi peningkatan kompetensi guru SMA di Jawa Timur dalam implementasi kurikulum Koding dan Kecerdasan Artifisial (AI) untuk pembelajaran modern.",
+                link: "https://www.google.com/search?q=BBGTK+Jawa+Timur+Koding+dan+Kecerdasan+Artifisial"
+            },
+            {
+                role: "Fasilitator Pembelajaran Mendalam (Deep Learning) SMA",
+                org: "BBGTK Provinsi Jawa Timur",
+                period: "2025 – Sekarang",
+                badge: "Aktif",
+                desc: "Mendampingi satuan pendidikan dan pendidik jenjang SMA dalam menerapkan pendekatan Pembelajaran Mendalam (Mindful, Meaningful, and Joyful Learning).",
+                link: "https://www.google.com/search?q=BBGTK+Jawa+Timur+Pembelajaran+Mendalam"
+            },
+            {
+                role: "Pendidik / Guru",
+                org: "SMA Negeri 1 Yosowilangun, Lumajang",
+                period: "2010 – Sekarang",
+                badge: "Utama",
+                desc: "Mengampu mata pelajaran Pendidikan Agama Islam dan Budi Pekerti serta aktif mengembangkan ekosistem digital dan literasi sekolah.",
+                link: "https://www.google.com/search?q=SMA+Negeri+1+Yosowilangun+Lumajang"
+            },
+            {
+                role: "Dosen",
+                org: "STAI Bustanul Ulum Lumajang",
+                period: "2014 – Sekarang",
+                badge: "Akademisi",
+                desc: "Mengajar dan membimbing mahasiswa perguruan tinggi dalam bidang kependidikan Islam, metodologi pembelajaran, dan inovasi kurikulum.",
+                link: "https://www.google.com/search?q=STAI+Bustanul+Ulum+Lumajang"
+            },
+            {
+                role: "Guru Pamong Pendidikan Profesi Guru (PPG)",
+                org: "UIN KHAS Jember",
+                period: "2021 – Sekarang",
+                badge: "Pamong PPG",
+                desc: "Membimbing mahasiswa PPG Dalam Jabatan dan Prajabatan dalam praktik pembelajaran inovatif serta penyusunan perangkat ajar.",
+                link: "https://uinkhas.ac.id/"
+            },
+            {
+                role: "Fasilitator & Pengajar Praktik Program Guru Penggerak",
+                org: "Kemdikbudristek RI",
+                period: "Program Nasional",
+                badge: "Kemdikbudristek",
+                desc: "Berperan sebagai Pengajar Praktik sekaligus Fasilitator dalam mencetak pemimpin pembelajaran yang berpusat pada murid melalui Program Guru Penggerak.",
+                link: "https://www.google.com/search?q=Program+Guru+Penggerak+Kemendikbudristek"
+            },
+            {
+                role: "Praktisi Mengajar Kampus Merdeka (Angkatan 4)",
+                org: "Kemdikbudristek RI",
+                period: "Angkatan 4",
+                badge: "Kampus Merdeka",
+                desc: "Berbagi praktik baik dan pengalaman nyata industri pendidikan langsung di ruang perkuliahan perguruan tinggi melalui program Praktisi Mengajar.",
+                link: "https://www.google.com/search?q=Praktisi+Mengajar+Kampus+Merdeka"
+            }
+        ];
+
+        // 2. DATA ORGANISASI
+        const organizations = [
+            {
+                role: "Wakil Ketua 2",
+                org: "MGMP PAI SMA Provinsi Jawa Timur",
+                period: "2022 – Sekarang",
+                icon: "fa-users-rectangle",
+                link: "https://www.google.com/search?q=MGMP+PAI+SMA+Jawa+Timur"
+            },
+            {
+                role: "Koordinator Infokom",
+                org: "Dewan Pimpinan MUI Kabupaten Lumajang",
+                period: "2024 – Sekarang",
+                icon: "fa-bullhorn",
+                link: "https://www.google.com/search?q=MUI+Kabupaten+Lumajang"
+            },
+            {
+                role: "Anggota Dewan Pakar",
+                org: "Badan Permusyawaratan Desa (BPD) Kabupaten Lumajang",
+                period: "2024 – Sekarang",
+                icon: "fa-scale-balanced",
+                link: "https://www.google.com/search?q=Badan+Permusyawaratan+Desa+Kabupaten+Lumajang"
+            },
+            {
+                role: "Ketua",
+                org: "MGMP PAI SMA Kabupaten Lumajang",
+                period: "2013 – 2018",
+                icon: "fa-user-tie",
+                link: "https://www.google.com/search?q=MGMP+PAI+SMA+Kabupaten+Lumajang"
+            }
+        ];
+
+        // 3. DATA PENGHARGAAN
+        const awards = [
+            { title: "Terbaik 1 Guru Transformatif SMA Kabupaten Lumajang", year: "2026", level: "Kabupaten", issuer: "Kabupaten Lumajang", link: "https://www.google.com/search?q=Guru+Transformatif+SMA+Kabupaten+Lumajang+Abdul+Muis" },
+            { title: "Terbaik 1 Guru Transformatif SMA Kabupaten Lumajang", year: "2025", level: "Kabupaten", issuer: "Kabupaten Lumajang", link: "https://www.google.com/search?q=Guru+Transformatif+SMA+Kabupaten+Lumajang+2025" },
+            { title: "Juara 3 Lomba Media Pembelajaran IT", year: "2024", level: "Provinsi", issuer: "Kanwil Kemenag Provinsi Jawa Timur", link: "https://www.google.com/search?q=Lomba+Media+Pembelajaran+IT+Kemenag+Jatim+2024" },
+            { title: "Finalis 10 Besar Jambore GTK Hebat Jenjang SMA", year: "2024", level: "Provinsi", issuer: "Provinsi Jawa Timur", link: "https://www.google.com/search?q=Jambore+GTK+Hebat+Jawa+Timur+2024" },
+            { title: "Juara 1 GTK Creative Camp Batch 4 — Media Pembelajaran Berbasis IT", year: "2023", level: "Provinsi", issuer: "Penghargaan Gubernur Jawa Timur", link: "https://www.google.com/search?q=GTK+Creative+Camp+Batch+4+2023+Jawa+Timur+Abdul+Muis" },
+            { title: "Finalis 10 Besar GTK Inovatif Jenjang SMA", year: "2023", level: "Provinsi", issuer: "Provinsi Jawa Timur", link: "https://www.google.com/search?q=GTK+Inovatif+SMA+Jawa+Timur+2023" },
+            { title: "Penulis Buku Terbaik GTK Creative Camp Batch 3", year: "2022", level: "Provinsi", issuer: "Penghargaan Gubernur Jawa Timur", link: "https://www.google.com/search?q=Penulis+Buku+Terbaik+GTK+Creative+Camp+Batch+3+2022" },
+            { title: "Juara 1 Guru PAI Berprestasi Nasional", year: "2021", level: "Nasional", issuer: "Penghargaan Menteri Agama RI", link: "https://www.google.com/search?q=Juara+1+Guru+PAI+Berprestasi+Nasional+2021+Abdul+Muis" },
+            { title: "Penulis Buku Terbaik GTK Creative Camp Batch 2", year: "2021", level: "Provinsi", issuer: "Penghargaan Gubernur Jawa Timur", link: "https://www.google.com/search?q=GTK+Creative+Camp+Batch+2+2021+Jawa+Timur" },
+            { title: "Finalis 10 Besar Inovasi Pembelajaran SMA", year: "2018", level: "Nasional", issuer: "Kemdikbudristek RI", link: "https://www.google.com/search?q=Inovasi+Pembelajaran+SMA+Kemendikbud+2018" },
+            { title: "Juara 2 Inovasi Pendidikan Karakter SMA", year: "2017", level: "Nasional", issuer: "Kemdikbudristek RI", link: "https://www.google.com/search?q=Inovasi+Pendidikan+Karakter+SMA+Kemdikbud+2017+Abdul+Muis" },
+            { title: "Juara 1 Apresiasi Guru PAI SMA Berprestasi Jawa Timur", year: "2015", level: "Provinsi", issuer: "Provinsi Jawa Timur", link: "https://www.google.com/search?q=Apresiasi+Guru+PAI+SMA+Berprestasi+Jawa+Timur+2015" },
+            { title: "Juara 1 Apresiasi Guru PAI SMA Kabupaten Lumajang", year: "2015", level: "Kabupaten", issuer: "Kabupaten Lumajang", link: "https://www.google.com/search?q=Apresiasi+Guru+PAI+SMA+Lumajang+2015" }
+        ];
+
+        // 4. DATA KARYA INOVASI
+        const innovations = [
+            {
+                name: "Aplikasi MABIT",
+                sub: "Mari Belajar Ilmu Tajwid",
+                icon: "fa-quran",
+                color: "from-emerald-400 to-teal-600",
+                desc: "Media pembelajaran interaktif yang memudahkan peserta didik memahami hukum bacaan tajwid disertai contoh audio dan evaluasi mandiri.",
+                link: "https://mabitpai.github.io/gccbatch4/"
+            },
+            {
+                name: "Aplikasi RUBEL PAI",
+                sub: "Ruang Belajar PAI dan Budi Pekerti",
+                icon: "fa-mosque",
+                color: "from-blue-400 to-indigo-600",
+                desc: "Portal pembelajaran digital terpadu Pendidikan Agama Islam dan Budi Pekerti yang memuat materi kontekstual, refleksi, dan asesmen interaktif.",
+                link: "https://www.pai10.rubel.web.id/"
+            },
+            {
+                name: "Aplikasi SITATIB Sekolah",
+                sub: "Sistem Informasi dan Tata Tertib Sekolah",
+                icon: "fa-shield-halved",
+                color: "from-amber-400 to-orange-600",
+                desc: "Sistem pencatatan kedisiplinan, pelanggaran, dan pembinaan karakter siswa secara digital, real-time, dan transparan bagi sekolah.",
+                link: "https://www.google.com/search?q=Aplikasi+SITATIB+Sistem+Informasi+Tata+Tertib+Sekolah"
+            },
+            {
+                name: "Aplikasi Examinator",
+                sub: "Generator Soal & Kisi-Kisi Berbantuan KKA",
+                icon: "fa-wand-magic-sparkles",
+                color: "from-purple-400 to-pink-600",
+                desc: "Aplikasi cerdas berbasis Koding & Kecerdasan Artifisial (KKA) untuk membantu guru menyusun kisi-kisi serta naskah soal HOTS secara otomatis.",
+                link: "https://examinator-ai-tau.vercel.app/"
+            },
+            {
+                name: "Aplikasi Exambrowser",
+                sub: "Exambrowser Berbasis Google Formulir",
+                icon: "fa-lock",
+                color: "from-cyan-400 to-blue-600",
+                desc: "Solusi pelaksanaan ujian daring berbasis Google Formulir dengan fitur pengamanan layar (anti-kecurangan) yang ringan dan mudah diterapkan di sekolah.",
+                link: "https://www.google.com/search?q=Exambrowser+Google+Formulir+CBT"
+            }
+        ];
+
+        // 5. DATA PUBLIKASI BUKU
+        const books = [
+            { title: "Buku Teks Utama PAI dan Budi Pekerti Kelas XII (Edisi Revisi)", publisher: "Direktorat PAI Kemenag RI", year: "2026", type: "Buku Teks Nasional", link: "https://www.google.com/search?q=%22Buku+Teks+Utama+PAI+dan+Budi+Pekerti+Kelas+XII%22+Kemenag" },
+            { title: "Buku Teks Utama PAI dan Budi Pekerti Kelas XII", publisher: "Direktorat PAI Kemenag RI", year: "2024", type: "Buku Teks Nasional", link: "https://www.google.com/search?q=%22PAI+dan+Budi+Pekerti+Kelas+XII%22+Direktorat+PAI+Kemenag+2024" },
+            { title: "Seni Mengelola Pembelajaran", publisher: "Mahameru Press", year: "2023", type: "Pedagogik", link: "https://www.google.com/search?q=%22Seni+Mengelola+Pembelajaran%22+Abdul+Muis+Joenaidy" },
+            { title: "Remodelling Pembelajaran bagi Guru", publisher: "Diva Press", year: "2020", type: "Inovasi Guru", link: "https://www.google.com/search?q=%22Remodelling+Pembelajaran+bagi+Guru%22+Abdul+Muis+Joenaidy" },
+            { title: "Konsep dan Strategi Pembelajaran di Era Revolusi Industri 4.0", publisher: "Diva Press", year: "2019", type: "Teknologi Pendidikan", link: "https://www.google.com/search?q=%22Konsep+dan+Strategi+Pembelajaran+di+Era+Revolusi+Industri+4.0%22+Abdul+Muis+Joenaidy" },
+            { title: "Nada, Cita, Cinta dan Keluarga", publisher: "Mahameru Press", year: "2019", type: "Inspirasi & Keluarga", link: "https://www.google.com/search?q=%22Nada,+Cita,+Cinta+dan+Keluarga%22+Abdul+Muis" },
+            { title: "Andai Tahun Ini Ramadhan Terakhirku", publisher: "Mahameru Press", year: "2018", type: "Keislaman", link: "https://www.google.com/search?q=%22Andai+Tahun+Ini+Ramadhan+Terakhirku%22+Abdul+Muis" },
+            { title: "Guru Asyik Murid Fantastik", publisher: "Diva Press", year: "2017", type: "Best Seller Pedagogik", link: "https://www.google.com/search?q=%22Guru+Asyik+Murid+Fantastik%22+Abdul+Muis+Joenaidy" },
+            { title: "Muhammad The Greatest Leader and Manager", publisher: "Pustaka Pelajar", year: "2014", type: "Kepemimpinan Islam", link: "https://www.google.com/search?q=%22Muhammad+The+Greatest+Leader+and+Manager%22+Abdul+Muis+Joenaidy" }
+        ];
+
+        // 6. DATA PENDIDIKAN
+        const educations = [
+            { degree: "Doktor (S3)", inst: "UIN KHAS Jember", year: "Lulus 2022", icon: "fa-user-graduate", color: "border-blue-600 bg-blue-50/50", link: "https://uinkhas.ac.id/" },
+            { degree: "Sarjana Kedua (S1)", inst: "Universitas Terbuka (UT) Jember", year: "Lulus 2024", icon: "fa-building-columns", color: "border-cyan-500 bg-cyan-50/50", link: "https://jember.ut.ac.id/" },
+            { degree: "Magister (S2)", inst: "UIN KHAS Jember", year: "Lulus 2014", icon: "fa-graduation-cap", color: "border-indigo-500 bg-indigo-50/50", link: "https://uinkhas.ac.id/" },
+            { degree: "Sarjana (S1)", inst: "STAIN Jember", year: "Lulus 2009", icon: "fa-university", color: "border-emerald-500 bg-emerald-50/50", link: "https://uinkhas.ac.id/" },
+            { degree: "Madrasah Aliyah (MA)", inst: "MA Baitul Arqom Balung – Jember", year: "Lulus 2004", icon: "fa-school", color: "border-amber-500 bg-amber-50/40", link: "https://www.google.com/search?q=MA+Baitul+Arqom+Balung+Jember" },
+            { degree: "Pendidikan Pesantren", inst: "Pondok Pesantren Bustanul Ulum, Lumajang", year: "2001", icon: "fa-mosque", color: "border-teal-600 bg-teal-50/40", link: "https://www.google.com/search?q=Pondok+Pesantren+Bustanul+Ulum+Yosowilangun+Lumajang" },
+            { degree: "Madrasah Tsanawiyah (MTs)", inst: "MTs Bustanul Ulum Yosowilangun, Lumajang", year: "Lulus 2001", icon: "fa-school-flag", color: "border-slate-400 bg-slate-50", link: "https://www.google.com/search?q=MTs+Bustanul+Ulum+Yosowilangun+Lumajang" },
+            { degree: "Madrasah Ibtidaiyah (MI)", inst: "MI Darussalam 02 Bagon – Puger – Jember", year: "Lulus 1998", icon: "fa-child-reaching", color: "border-slate-400 bg-slate-50", link: "https://www.google.com/search?q=MI+Darussalam+02+Bagon+Puger+Jember" }
+        ];
+
+        // RENDER FUNCTIONS
+        function renderExperiences() {
+            const container = document.getElementById('experienceList');
+            container.innerHTML = experiences.map((item) => `
+                <div onclick="showDetailModal('${item.role}', '${item.org} (${item.period})', '${item.desc}', '${item.link}')" 
+                     class="cursor-pointer group p-4 rounded-2xl border border-slate-200/80 hover:border-blue-500 bg-slate-50/60 hover:bg-blue-50/40 transition flex items-start justify-between gap-4">
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-3 h-3 rounded-full bg-blue-600 mt-2 shrink-0 timeline-dot group-hover:scale-125 transition"></div>
+                        <div>
+                            <div class="flex flex-wrap items-center gap-2">
+                                <h3 class="font-bold text-slate-900 group-hover:text-blue-700 transition text-sm sm:text-base">${item.role}</h3>
+                                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-700">${item.period}</span>
+                            </div>
+                            <p class="text-xs sm:text-sm font-medium text-slate-600 mt-0.5">${item.org}</p>
+                        </div>
+                    </div>
+                    <a href="${item.link}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" title="Telusuri Tautan" class="w-8 h-8 rounded-lg bg-white border border-slate-200 text-slate-500 hover:text-blue-600 hover:border-blue-400 flex items-center justify-center shrink-0 transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            `).join('');
+        }
+
+        function renderOrganizations() {
+            const container = document.getElementById('organizationList');
+            container.innerHTML = organizations.map((item) => `
+                <a href="${item.link}" target="_blank" rel="noopener noreferrer" 
+                   class="group p-4 rounded-2xl border border-slate-200/80 hover:border-indigo-500 bg-slate-50/60 hover:bg-indigo-50/40 transition flex items-center justify-between gap-3 block">
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 flex items-center justify-center shrink-0 group-hover:bg-indigo-600 group-hover:text-white transition">
+                            <i class="fa-solid ${item.icon}"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-indigo-600">${item.period}</div>
+                            <h3 class="font-bold text-slate-900 text-sm sm:text-base">${item.role}</h3>
+                            <p class="text-xs text-slate-600">${item.org}</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-indigo-600"></i>
+                </a>
+            `).join('');
+        }
+
+        function renderAwards(filter = 'all') {
+            const container = document.getElementById('awardsGrid');
+            const filtered = filter === 'all' ? awards : awards.filter(a => a.level === filter);
+
+            const badgeColors = {
+                'Nasional': 'bg-red-100 text-red-700 border-red-200',
+                'Provinsi': 'bg-amber-100 text-amber-800 border-amber-200',
+                'Kabupaten': 'bg-emerald-100 text-emerald-700 border-emerald-200'
+            };
+
+            container.innerHTML = filtered.map((item) => `
+                <div onclick="showDetailModal('${item.title}', 'Tahun ${item.year} • Tingkat ${item.level}', 'Penghargaan diberikan oleh ${item.issuer}. Klik tombol di bawah untuk menelusuri informasi penghargaan di mesin pencari.', '${item.link}')"
+                     class="cursor-pointer card-hover rounded-2xl p-5 border border-slate-200 bg-gradient-to-b from-white to-slate-50/80 flex flex-col justify-between gap-4 group">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-slate-900 text-amber-400 flex items-center gap-1.5">
+                                <i class="fa-solid fa-star text-[10px]"></i> ${item.year}
+                            </span>
+                            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${badgeColors[item.level]}">
+                                Tingkat ${item.level}
+                            </span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 group-hover:text-blue-600 transition leading-snug text-sm sm:text-base">
+                            ${item.title}
+                        </h3>
+                    </div>
+                    <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+                        <span class="truncate pr-2"><i class="fa-solid fa-medal text-amber-500 mr-1"></i> ${item.issuer}</span>
+                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="text-blue-600 font-bold hover:underline shrink-0 flex items-center gap-1">
+                            Cari <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterAwards(level) {
+            document.querySelectorAll('.award-filter-btn').forEach(btn => {
+                btn.className = 'award-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-600 hover:bg-slate-200 transition';
+            });
+            const activeBtn = document.getElementById(`btn-award-${level}`);
+            if (activeBtn) {
+                activeBtn.className = 'award-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-blue-600 text-white transition shadow-sm';
+            }
+            renderAwards(level);
+        }
+
+        function renderInnovations() {
+            const container = document.getElementById('innovationGrid');
+            container.innerHTML = innovations.map((item) => `
+                <div onclick="showDetailModal('${item.name} (${item.sub})', 'Karya Inovasi Aplikasi Pendidikan', '${item.desc}', '${item.link}')"
+                     class="cursor-pointer glass-card hover:bg-white/15 rounded-2xl p-6 transition duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white text-xl shadow-lg mb-4 group-hover:scale-110 transition">
+                            <i class="fa-solid ${item.icon}"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white group-hover:text-cyan-300 transition">${item.name}</h3>
+                        <div class="text-xs font-semibold text-cyan-300 mt-0.5 mb-3">${item.sub}</div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${item.desc}</p>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-white/10 flex items-center justify-between text-xs font-semibold text-cyan-400">
+                        <span>Klik untuk Detail</span>
+                        <a href="${item.link}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" class="hover:text-white flex items-center gap-1">
+                            Telusuri <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderBooks() {
+            const container = document.getElementById('booksGrid');
+            container.innerHTML = books.map((book) => `
+                <a href="${book.link}" target="_blank" rel="noopener noreferrer"
+                   class="card-hover rounded-2xl p-5 border border-slate-200 bg-white flex items-start gap-4 group">
+                    <div class="w-12 h-16 rounded-lg bg-gradient-to-b from-blue-700 to-indigo-900 text-white flex flex-col items-center justify-center shrink-0 shadow-md group-hover:from-blue-600 group-hover:to-cyan-600 transition">
+                        <i class="fa-solid fa-book-bookmark text-amber-300 text-sm mb-1"></i>
+                        <span class="text-[10px] font-extrabold">${book.year}</span>
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-blue-50 text-blue-700 mb-1">${book.type}</span>
+                        <h3 class="font-bold text-slate-900 group-hover:text-blue-600 transition text-sm sm:text-base leading-snug">${book.title}</h3>
+                        <p class="text-xs text-slate-500 mt-1.5 flex items-center gap-1.5">
+                            <i class="fa-solid fa-building text-slate-400"></i> ${book.publisher} (${book.year})
+                        </p>
+                    </div>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-300 group-hover:text-blue-600 mt-1"></i>
+                </a>
+            `).join('');
+        }
+
+        function renderEducation() {
+            const container = document.getElementById('educationGrid');
+            container.innerHTML = educations.map((edu) => `
+                <a href="${edu.link}" target="_blank" rel="noopener noreferrer"
+                   class="card-hover rounded-2xl p-5 border-l-4 ${edu.color} border border-slate-200/80 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between text-xs font-bold text-slate-500 mb-2">
+                            <span>${edu.year}</span>
+                            <i class="fa-solid ${edu.icon} text-slate-700 group-hover:scale-110 transition"></i>
+                        </div>
+                        <div class="text-xs font-extrabold uppercase tracking-wider text-blue-700">${edu.degree}</div>
+                        <h3 class="font-bold text-slate-900 mt-1 text-sm sm:text-base group-hover:text-blue-600 transition">${edu.inst}</h3>
+                    </div>
+                    <div class="mt-4 text-[11px] font-semibold text-blue-600 flex items-center gap-1 opacity-80 group-hover:opacity-100">
+                        <span>Lihat Institusi</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        // MODAL INTERAKTIF SWEETALERT2
+        function showDetailModal(title, subtitle, description, url) {
+            Swal.fire({
+                title: `<span class="text-lg sm:text-xl font-extrabold text-slate-900">${title}</span>`,
+                html: `
+                    <div class="text-left mt-2">
+                        <div class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold mb-3">${subtitle}</div>
+                        <p class="text-sm text-slate-600 leading-relaxed">${description}</p>
+                    </div>
+                `,
+                showCancelButton: true,
+                confirmButtonText: '<i class="fa-solid fa-arrow-up-right-from-square mr-1.5"></i> Buka Referensi / Link',
+                cancelButtonText: 'Tutup',
+                confirmButtonColor: '#2563EB',
+                cancelButtonColor: '#64748B',
+                customClass: {
+                    popup: 'rounded-3xl'
+                }
+            }).then((result) => {
+                if (result.isConfirmed && url) {
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
+            });
+        }
+
+        function showInfoModal(title, value, icon, url) {
+            Swal.fire({
+                title: title,
+                text: value,
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Lihat di Google Maps',
+                cancelButtonText: 'Tutup',
+                confirmButtonColor: '#2563EB'
+            }).then((res) => {
+                if (res.isConfirmed && url) {
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
+            });
+        }
+
+        // Inisialisasi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            renderExperiences();
+            renderOrganizations();
+            renderAwards();
+            renderInnovations();
+            renderBooks();
+            renderEducation();
+        });
+    </script>
+</body>
+</html>
