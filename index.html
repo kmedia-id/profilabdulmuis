@@ -464,6 +464,31 @@
         </section>
 
     </main>
+<!-- Bottom Navigation Bar Khusus Layar HP (Mobile Only) -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-t border-white/15 px-2 py-2 no-print shadow-2xl">
+        <div class="grid grid-cols-5 gap-1 text-center">
+            <a href="#profil" class="flex flex-col items-center justify-center py-1 text-slate-300 hover:text-cyan-400 active:text-cyan-400 transition">
+                <i class="fa-solid fa-user text-sm mb-1"></i>
+                <span class="text-[10px] font-semibold">Profil</span>
+            </a>
+            <a href="#pengalaman" class="flex flex-col items-center justify-center py-1 text-slate-300 hover:text-cyan-400 active:text-cyan-400 transition">
+                <i class="fa-solid fa-briefcase text-sm mb-1"></i>
+                <span class="text-[10px] font-semibold">Karir</span>
+            </a>
+            <a href="#penghargaan" class="flex flex-col items-center justify-center py-1 text-slate-300 hover:text-amber-400 active:text-amber-400 transition">
+                <i class="fa-solid fa-trophy text-sm mb-1 text-amber-400"></i>
+                <span class="text-[10px] font-semibold">Prestasi</span>
+            </a>
+            <a href="#inovasi" class="flex flex-col items-center justify-center py-1 text-slate-300 hover:text-cyan-400 active:text-cyan-400 transition">
+                <i class="fa-solid fa-rocket text-sm mb-1 text-cyan-400"></i>
+                <span class="text-[10px] font-semibold">Inovasi</span>
+            </a>
+            <a href="#publikasi" class="flex flex-col items-center justify-center py-1 text-slate-300 hover:text-cyan-400 active:text-cyan-400 transition">
+                <i class="fa-solid fa-book text-sm mb-1"></i>
+                <span class="text-[10px] font-semibold">Buku</span>
+            </a>
+        </div>
+    </nav>
 
     <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 py-10 border-t border-slate-800">
@@ -653,7 +678,7 @@
         // 6. DATA PENDIDIKAN
         const educations = [
             { degree: "Doktor (S3)", inst: "UIN KHAS Jember", year: "Lulus 2022", icon: "fa-user-graduate", color: "border-blue-600 bg-blue-50/50", link: "https://uinkhas.ac.id/" },
-            { degree: "Sarjana Kedua (S1)", inst: "Universitas Terbuka (UT) Jember", year: "Lulus 2024", icon: "fa-building-columns", color: "border-cyan-500 bg-cyan-50/50", link: "https://jember.ut.ac.id/" },
+            { degree: "Sarjana Kedua (S1)", inst: "Universitas Terbuka (UT) Jember", year: "Sedang Berlangsung (mulai 2024)", icon: "fa-building-columns", color: "border-cyan-500 bg-cyan-50/50", link: "https://jember.ut.ac.id/" },
             { degree: "Magister (S2)", inst: "UIN KHAS Jember", year: "Lulus 2014", icon: "fa-graduation-cap", color: "border-indigo-500 bg-indigo-50/50", link: "https://uinkhas.ac.id/" },
             { degree: "Sarjana (S1)", inst: "STAIN Jember", year: "Lulus 2009", icon: "fa-university", color: "border-emerald-500 bg-emerald-50/50", link: "https://uinkhas.ac.id/" },
             { degree: "Madrasah Aliyah (MA)", inst: "MA Baitul Arqom Balung – Jember", year: "Lulus 2004", icon: "fa-school", color: "border-amber-500 bg-amber-50/40", link: "https://www.google.com/search?q=MA+Baitul+Arqom+Balung+Jember" },
